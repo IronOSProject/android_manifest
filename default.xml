@@ -1097,4 +1097,7 @@
   <include name="snippets/remove.xml"/>
   <include name="snippets/lineage.xml" />
 
+  <!-- TEMP -->
+  <include name="snippets/fluid-temp.xml" />
+
 </manifest>
