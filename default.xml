@@ -1094,5 +1094,6 @@
 
   <!-- ProtonAOSP changes -->
   <include name="snippets/proton.xml"/>
-  
+  <include name="snippets/remove.xml"/>
+
 </manifest>
