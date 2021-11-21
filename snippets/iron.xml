@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="github"
+           fetch="https://github.com" />
+  
+  <remote  name="gitlab"
+           fetch="https://gitlab.com" />
+  
+  <remote name="iron"
+          fetch="https://github.com/Iron-temp"
+          revision="twelve"/>
+  
+  <remote name="github" fetch="https://github.com" />
+  <remote name="github-ssh" fetch="ssh://git@github.com" />
+  <remote name="gitlab" fetch="https://gitlab.com" />
+  <remote name="gitlab-ssh" fetch="ssh://git@gitlab.com" />
+  <remote name="proton" fetch="https://github.com/ProtonAOSP" revision="sc" />
+  <remote name="proton-ssh" fetch="ssh://git@github.com/ProtonAOSP" revision="sc" />
+  <remote name="blobs" fetch="https://github.com/NeutronBlobs" revision="sc" />
+  <remote name="blobs-ssh" fetch="ssh://git@github.com/NeutronBlobs" revision="sc" />
+
+
+  <!-- Rootdir -->
+  <project path="bionic" name="android_bionic" groups="pdk" remote="iron" />
+  <project path="libcore" name="android_libcore" remote="iron" />
+  <project path="manifest" name="android_manifest" remote="iron" />
+
+  <!-- Bootable -->
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="iron" />
+
+  <!-- Build -->
+  <project path="build/make" name="android_build_make" groups="pdk" remote="iron" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="iron" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Device -->
+  <project path="device/proton/sepolicy" name="android_device_proton_sepolicy" remote="iron" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="iron" />
+  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" groups="qcom,pdk-qcom" remote="iron" />
+  <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="twelve-legacy" remote="iron" />
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="twelve-legacy-um" remote="iron" />
+
+  <!-- External -->
+  <project path="external/tinycompress" name="android_external_tinycompress" groups="pdk" remote="iron" />
+
+  <!-- Frameworks -->
+  <project name="android_frameworks_av" path="frameworks/av" remote="iron" />
+  <project name="android_frameworks_base" path="frameworks/base" remote="iron" />
+  <project name="android_frameworks_native" path="frameworks/native" remote="iron" />
+  
+  <!-- Hardware -->
+  <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="iron" />
+  <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom-caf_sm8150_display" remote="iron" />
+
+  <!-- System -->
+  <project path="system/core" name="android_system_core" groups="pdk" remote="iron" />
+  <project path="system/libhwbinder" name="android_system_libhwbinder" remote="iron" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="iron" />
+  <project path="system/update_engine" name="android_system_update_engine" remote="iron" />
+
+  <!-- Vendor -->
+  <project name="android_vendor_iron" path="vendor/iron" remote="iron" />
+
+</manifest>
