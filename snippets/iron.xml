@@ -74,5 +74,6 @@
 
   <!-- Vendor -->
   <project name="android_vendor_iron" path="vendor/iron" remote="iron" />
+  <project name="android_vendor_support" path="vendor/support" remote="iron" />
 
 </manifest>
