@@ -45,7 +45,7 @@
   </project>
 
   <!-- Device -->
-  <project path="device/proton/sepolicy" name="android_device_proton_sepolicy" remote="iron" />
+  <project path="device/iron/sepolicy" name="android_device_iron_sepolicy" remote="iron" />
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="iron" />
   <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" groups="qcom,pdk-qcom" remote="iron" />
   <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="twelve-legacy" remote="iron" />
