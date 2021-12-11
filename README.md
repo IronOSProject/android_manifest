@@ -75,5 +75,5 @@ OR to sync up without spam in your term:
 Build command are:
 ------------------
     . build/envsetup.sh
-    lunch aosp_$device-userdebug
+    lunch iron_$device-userdebug
     mka bacon
