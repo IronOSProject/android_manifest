@@ -55,12 +55,12 @@ GIT config (nickname, e-mail)
 To initialize your local repository use
 ---------------------------------------
 
-    repo init -u https://github.com/Iron-temp/android_manifest.git -b twelve
+    repo init -u https://github.com/IronOSProject/android_manifest.git -b twelve
 
 If you want to save time and space you can do a shallow clone
 ---------------------------------------
 
-    repo init -u https://github.com/Iron-temp/android_manifest.git -b twelve --depth=1
+    repo init -u https://github.com/IronOSProject/android_manifest.git -b twelve --depth=1
     
 Then to sync up:
 ----------------
