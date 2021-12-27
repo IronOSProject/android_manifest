@@ -13,7 +13,7 @@
   
 
 <!-- Replace existing repositories -->  
-  <project name="android_art" path="art" remote="proton" groups="proton" />
+<!--  <project name="android_art" path="art" remote="proton" groups="proton" /> -->  
   <project name="android_external_noto-fonts" path="external/noto-fonts" remote="proton" groups="proton" />
   <project name="android_external_roboto-fonts" path="external/roboto-fonts" remote="proton" groups="proton" />
   <project name="android_external_google-fonts_cutive-mono" path="external/google-fonts/cutive-mono" remote="proton" groups="proton" />

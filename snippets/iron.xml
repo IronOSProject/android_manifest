@@ -22,6 +22,7 @@
 
 
   <!-- Rootdir -->
+  <project path="art" name="android_art" remote="iron" />
   <project path="bionic" name="android_bionic" groups="pdk" remote="iron" />
   <project path="libcore" name="android_libcore" remote="iron" />
   <project path="manifest" name="android_manifest" remote="iron" />
