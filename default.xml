@@ -1108,7 +1108,7 @@
   <include name="snippets/lineage.xml" />
   <include name="snippets/iron.xml"/>
   <include name="snippets/proton.xml"/>
-  
+  <include name="snippets/arrow.xml"/>
 
 
   <!-- TEMP -->
