@@ -16,6 +16,7 @@
   <!-- Device -->
   <remove-project name="device/amlogic/yukawa" />
   <remove-project name="device/amlogic/yukawa-kernel" />
+  <remove-project name="device/common" />
   <remove-project name="device/generic/opengl-transport" />
   <remove-project name="device/google/barbet" />
   <remove-project name="device/google/barbet-kernel" />
@@ -101,6 +102,10 @@
   <remove-project name="platform/packages/modules/Permission" />
   <remove-project name="platform/packages/modules/Wifi" />
 
+  <!-- Platform -->
+  <remove-project name="platform/external/armnn" />
+  <remove-project name="platform/external/android-nn-driver" />
+
   <!-- Prebuilts -->
   <remove-project name="platform/prebuilts/abi-dumps/vndk" />
   <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
@@ -114,7 +119,7 @@
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/libhwbinder" />
   <remove-project name="platform/system/logging" />
-  <remove-project name="platform/system/memory/lmkd" />
+  <!--  <remove-project name="platform/system/memory/lmkd" /> -->
   <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/system/update_engine" />
 
