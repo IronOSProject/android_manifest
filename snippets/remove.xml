@@ -103,8 +103,8 @@
   <remove-project name="platform/packages/modules/Wifi" />
 
   <!-- Platform -->
-  <remove-project name="platform/external/armnn" />
-  <remove-project name="platform/external/android-nn-driver" />
+<!--  <remove-project name="platform/external/armnn" /> -->
+<!--  <remove-project name="platform/external/android-nn-driver" /> -->
 
   <!-- Prebuilts -->
   <remove-project name="platform/prebuilts/abi-dumps/vndk" />
