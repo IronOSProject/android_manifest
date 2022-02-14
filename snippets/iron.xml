@@ -61,6 +61,7 @@
   <project name="android_frameworks_native" path="frameworks/native" remote="iron" />
   
   <!-- Hardware -->
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="iron" />
   <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="iron" />
   <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom-caf_sm8150_display" remote="iron" />
 
