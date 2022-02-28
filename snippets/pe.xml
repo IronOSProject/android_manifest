@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="pe"
+           fetch="https://github.com/PixelExperience/"
+           revision="twelve" />
+
+  <!-- External -->
+  <project path="external/e2fsprogs" name="external_e2fsprogs" groups="pdk" remote="pe" />
+  <project path="external/gptfdisk" name="external_gptfdisk" groups="pdk" remote="pe" />
+  <project path="external/mksh" name="external_mksh" groups="pdk" remote="pe" />
+
+  <!-- Hardware -->
+  <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="pe" />
+  <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" groups="qcom_wlan,pdk-qcom" remote="pe" />
+
+  <!-- Packages -->
+  <project path="packages/modules/adb" name="packages_modules_adb" groups="pdk" remote="pe" />
+
+  <!-- Vendor -->
+  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="pe" />
+  <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" remote="pe" />
+
+</manifest>

@@ -1092,15 +1092,12 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
-  <!-- ProtonAOSP changes -->
+  <!-- IronOS changes -->
   <include name="snippets/remove.xml"/>
   <include name="snippets/lineage.xml" />
   <include name="snippets/iron.xml"/>
   <include name="snippets/proton.xml"/>
   <include name="snippets/arrow.xml"/>
-
-
-  <!-- TEMP -->
-  <include name="snippets/fluid-temp.xml" />
+  <include name="snippets/pe.xml"/>
 
 </manifest>
