@@ -5,10 +5,19 @@
            fetch="https://github.com/PixelExperience/"
            revision="twelve" />
 
+  <remote name="pixel-gitlab"
+          fetch="https://gitlab.com/PixelExperience"
+          revision="twelve" />
+
+  <remote name="pixel-gitlab-self-hosted"
+          fetch="https://gitlab.pixelexperience.org/android"
+          revision="twelve" />
+
   <!-- External -->
   <project path="external/e2fsprogs" name="external_e2fsprogs" groups="pdk" remote="pe" />
   <project path="external/gptfdisk" name="external_gptfdisk" groups="pdk" remote="pe" />
   <project path="external/mksh" name="external_mksh" groups="pdk" remote="pe" />
+  <project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab-self-hosted" />
 
   <!-- Hardware -->
   <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="pe" />
@@ -16,6 +25,7 @@
 
   <!-- Packages -->
   <project path="packages/modules/adb" name="packages_modules_adb" groups="pdk" remote="pe" />
+  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="pe" />
 
   <!-- Vendor -->
   <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="pe" />
